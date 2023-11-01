@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans";
+}
+body{
+    background-color: black;
+   
+}
+.webName h1{
+    font-size: 40px;
+}
+nav{
+    color: white;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+}
+.recentMovie{
+    color: white;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    height: 290px;
+    /* display: flex; */
+}
+.carasoul-section{
+    display: flex;
+    align-items: center;
+}
+.carasoul-section i{
+    background-color: antiquewhite;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.carasuol{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: auto;
+    z-index: 20;
+    /* border: 1px solid black; */
+    /* overflow: hidden; */
+    gap: 15px;
+    margin: 0 10px ;
+    position: absolute;
+    left: 0px;
+    transition: 0.3s ease-in-out;
+    /* float:right; */
+}
+.rec-Movie{
+    width: 158px;
+}
+.rec-Movie img{
+    width: 100%;
+    
+}
+.rec-Movie p{
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+img{
+    width: 100%;
+}
+.filter-movie{
+    display: flex;
+    /* width: 60%; */
+    /* margin: auto; */
+    /* justify-content: center; */
+    gap: 20px;
+    align-items: center;
+}
+.filterBtn,.right-nav button{
+    font-size: 14px;
+    padding: 4px 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.filter-movie button:active, .right-nav button:active{
+    transform: translateY(2px);
+    background-color: white;
+    color: black;
+}
+.filter-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+
+/*----------------- Search Bar---------------- */
+.searchBar{
+    overflow:hidden;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color; */
+}
+.searchBar i{
+    position: relative;
+    color: white;
+    z-index: 10;
+    /* left: 0; */
+    padding: 10px 200px 10px 10px;
+    font-size: 20px;
+    background-color: black;
+}
+.searchBar input{
+    border-radius: 50px;
+    width: 700%;
+    position:absolute;
+    /* z-index: 5; */
+    left: 50px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+::placeholder{
+    font-size: 16px;
+}
+
+
+/* Show Moovie */
+.showMovie{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 30px;
+    /* padding: 0 10px; */
+}
+.showMovieItem{
+    width: 255px;
+ height: 410px;
+ max-width: 260px;
+ border: 8px solid;
+ border-image: linear-gradient(to right, darkblue,white, darkorchid) 1;
+ margin-bottom: 20px;
+}
+.showMovieItem img{
+    width: 100%;
+    height: 88%;
+}
+.activeBtn{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+    /* font-size: 100px; */
+}
+.main-title{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    /* padding: 10px; */
+}
+main h2{
+    color: white;
+    padding-left: 85px;
+}
+.logo a{
+    cursor: pointer;
+    color: white;
+
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* display: none; */
+}
+.logoLoader{
+    mix-blend-mode:hard-light;
+    /* width: 100%; */
+    width: 20%;
+}
+.logo img{
+    width: 50px;
+}
+.loader p{
+    color: white;
+    position: relative;
+    top: -60px;
+}
+.webName h1{
+    text-decoration: underline;
+}
+
+
