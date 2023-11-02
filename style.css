@@ -118,6 +118,7 @@ img{
     /* background-color; */
 }
 .searchBar i{
+    cursor: pointer;
     position: relative;
     color: white;
     z-index: 10;
