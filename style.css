@@ -211,5 +211,101 @@ main h2{
 .webName h1{
     text-decoration: underline;
 }
+.showMovieDetails{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 224, 207, 0.918);
+    display: flex;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    gap: 40px;
+    border-radius: 20px;  
+    box-shadow: 0 0 1500px 3000px rgba(0, 0, 0, 0.842);
+    /* height: 80%; */
+}
+
+.showMovieDetails .imgD{
+    /* background-color: aqua; */
+    width: 25%;
+    
+}
+.imgD img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.detailsRight{
+    padding: 50px 0;
+    max-width: 500px;
+    min-height: 450px;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.background{
+    display: none;
+}
 
 
+.detailsRight-sub{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: c; */
+}
+.detailsRight-sub >p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: bold; 
+}
+
+.detailsRight-sub >p:nth-child(2){
+    margin-top: -30px;
+    font-size: 14px;
+}
+
+.detailsRight-sub >div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.detailsRight-sub >h3:nth-child(4){
+    text-decoration: underline;
+}
+
+.detailsRight-sub >p:nth-child(5){
+    margin-top: -20px;
+    /* width: 50%; */
+}
+.detailsRight-sub >div:nth-child(6){
+    display: flex;
+    justify-content: space-between;
+}
+.directors p{
+    font-weight: bold;
+}
+.directors p span{
+    font-weight: lighter;
+    font-size: 14px;
+}
+.showMovieDetails >i{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 28px;
+    cursor: pointer;
+    /* color: blueviolet; */
+}
+#year{
+    font-size: 16px;
+}
+.icons i{
+    transition: 0.2s ease-in-out;
+}
+.icons i:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

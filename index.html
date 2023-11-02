@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav>
         <div class="logo">
-           <a href="./index.html"> <img src="./—Pngtree—white movie film icon_4619919.png" alt=""></a>
+            <a href="./index.html"> <img src="./—Pngtree—white movie film icon_4619919.png" alt=""></a>
         </div>
         <div class="webName">
             <h1>CineSearch</h1>
@@ -25,7 +29,7 @@
 
         <h2>Latest</h2>
         <section class="carasoul-section">
-           
+
             <i class="fa-solid fa-angle-left"></i>
             <div class="recentMovie">
 
@@ -82,7 +86,7 @@
         </div>
         <section class="filter-section">
             <div class="filter-movie">
-                <button value="popular"  class="filterBtn">Popular</button>
+                <button value="popular" class="filterBtn">Popular</button>
                 <button value="upcoming" class="filterBtn">Upcoming</button>
                 <button value="top_rated" class="filterBtn">Top Rated</button>
                 <button value="now_playing" class="filterBtn">Now Playing</button>
@@ -92,24 +96,58 @@
                 <form action="" class="searchBar ">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" class="searchBtn" placeholder="Search Your Favourite Movie">
-                    <button ></button>
+                    <button></button>
                 </form>
             </div>
         </section>
         <div class="loader">
-            <img class="logoLoader" src="https://i.pinimg.com/originals/7f/c6/30/7fc6309bbf5a11240df530589c7816a5.gif" alt="">
+            <img class="logoLoader" src="https://i.pinimg.com/originals/7f/c6/30/7fc6309bbf5a11240df530589c7816a5.gif"
+                alt="">
             <P>Loading...</P>
         </div>
         <div class="showMovie">
         </div>
     </main>
 
-    <div class="showMovieDetails">
-        
+    <div class="background animate__animated">
+        <div class="showMovieDetails animate__animated">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="imgD">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/qVKirUdmoex8SdfUk8WDDWwrcCh.jpg" alt="">
+            </div>
+            <div class="detailsRight">
+                <div class="detailsRight-sub">
+                    <!-- <div class="detailsRight-heading"> -->
+                    <p><span>Pain HUSTLER</span>
+                        <spna id="year">(2023)</spna>
+                    </p>
+                    <p>
+                        <span class="rated">R</span>
+                        <span class="date">10/20/2023</span>.
+                        <span>Drama, Crime</span>
+                        <span class="hr">2 H 2 m</span>
+                    </p>
+                    <div class="icons">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-bookmark"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-download"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="description">asdasdasdasdasd</p>
+                    <div class="directors">
+                        <p>David Yates <br><span>Director</span></p>
+                        <p>Wells Tower <br><span>Writer</span></p>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
     </div>
-
     <div class="pagination">
-        
+
     </div>
     <!-- <img src="" alt=""> -->
     <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
