@@ -21,7 +21,6 @@ function appendCarasoulData(result) {
   } else {
     // ---------------Calling function to create and append Data to Carasol------------
     createAndAppendData(newarr);
-    // newarr=[];
   }
 }
 
@@ -48,8 +47,6 @@ let lftPos = 0;
 setInterval(() => {
   carasoul.style.left = `-${lftPos}px`;
   lftPos += 172;
-  // carasoulshift(lftPos)
-  //   console.log(newarr.length);
   if (lftPos >= 172 * 5) {
     lftPos = 0;
   }
@@ -60,7 +57,6 @@ let searchInput = document.querySelector(".searchBar input");
 let searchBar = document.querySelector(".searchBar");
 searchIcon.addEventListener("click", () => {
   searchInput.focus();
-  // searchBar.style.width ="200px"
   searchInput.style.left = "-700%";
   searchBar.style.overflow = "visible";
 });
@@ -82,7 +78,6 @@ allFilterButton.forEach((ele, idx) => {
     }
 
     page = 1;
-    // console.log(e.target.value);
     movieArray = [];
     showMovie.innerHTML = "";
     fecthDataAgain(e.target.value, page);
@@ -98,13 +93,11 @@ async function fecthDataAgain(movie, pg) {
     let data = await fetch(url);
     let res = await data.json();
     loader.style.display = "flex";
-    // console.log(pg);
     appendMainData(res.results, movie);
   } catch (error) {
     if (page == 2000) {
       page = 1;
     }
-    // console.log("error");
     fecthDataAgain(`${movie}`, page++);
   }
 }
@@ -117,7 +110,6 @@ function appendMainData(result, movie) {
       movieArray.push(ele);
     }
   });
-  // console.log(movieArray.length);
   if (movieArray.length <= 20) {
     fecthDataAgain(`${movie}`, page++);
   } else {
@@ -130,7 +122,6 @@ let allItems = document.querySelectorAll(".showMovieItem");
 function createEleAppendToMain(movieArray) {
   movieArray.forEach((ele, idx) => {
     if (idx < 20) {
-      // console.log(ele);
       let div1 = document.createElement("div");
       let poster = ele.poster_path;
       let title = ele.original_title;
@@ -145,24 +136,9 @@ function createEleAppendToMain(movieArray) {
       showMovie.appendChild(div1);
       allMovieCard = document.querySelectorAll(".showMovieItem");
       addEventonBtn(allMovieCard);
-      // showMovieDetails(allItems);
     }
   });
 }
-
-// function showMovieDetails(allItems){
-//   allItems.forEach(ele=>{
-//     ele.addEventListener("click", showDetailCallBack)
-//   })
-// }
-// async function showDetailCallBack(e){
-// let t=(e.target.parentElement.children[1].innerText);
-// t=t.split(" ").join("+");
-// let data= await fetch(`http://www.omdbapi.com/?apikey=340ca97e&t=${t}&plot=full`);
-// let res= await data.json();
-// console.log(res)
-
-// }
 
 fecthDataAgain("popular", 1);
 // Deboucing concept
@@ -219,11 +195,9 @@ async function getData(pg = 1) {
       "https://www.omdbapi.com/?&apikey=340ca97e&id=tt8110330"
     );
     let res2 = await data2.json();
-    // console.log(res2);
     let res = await data.json();
     totalPg.innerText = `${res.totalResults}`;
     currentPg.innerText = `${pg}`;
-    console.log(res);
     showMovie.innerText = "";
     res.Search.forEach((ele) => {
       let div1 = document.createElement("div");
@@ -238,7 +212,7 @@ async function getData(pg = 1) {
     });
     allMovieCard = document.querySelectorAll(".showMovieItem");
     addEventonBtn(allMovieCard);
-    pagination.style.display = "flex";
+    pagination.style.display = "block";
   } catch (error) {
     if (searchInput.value == "") {
       showMovie.innerHTML = "<h1>Please Enter Movie Name</h1>";
@@ -253,7 +227,6 @@ async function getData(pg = 1) {
 let allMovieCard;
 
 function addEventonBtn(allMovieCard) {
-  // allMovieCard=document.querySelectorAll(".showMovieItem")
   allMovieCard.forEach((ele) => {
     ele.addEventListener("click", movieDetail);
   });
@@ -264,7 +237,6 @@ let showDetailPopUp = document.querySelector(".background");
 async function movieDetail(e) {
   spinnerLoader.style.display = "block";
   let movieClicked = e.target.parentElement.children[1].children[0].innerText;
-  // console.log(movieClicked);
   let val = movieClicked.split(" ").join("+");
 
   let data = await fetch(
@@ -311,14 +283,11 @@ async function movieDetail(e) {
   
   `;
 
-  // console.log("hh");
   showDetailPopUp.replaceChildren(div1);
   showDetailPopUp.style.display = "flex";
   spinnerLoader.style.display = "none";
 
   document.querySelector(".showMovieDetails").classList.add("animate__zoomIn");
-  //
-  // showDetailPopUp.classList.add("animate__lightSpeedInRight")
   closePopbtn = document.querySelector(".fa-xmark");
   closePopUp(closePopbtn);
 }

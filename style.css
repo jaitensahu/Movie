@@ -14,7 +14,6 @@ body{
 }
 nav{
     color: white;
-    /* background-color: antiquewhite; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +28,6 @@ nav{
     position: relative;
     z-index: 10;
     height: 290px;
-    /* display: flex; */
 }
 .carasoul-section{
     display: flex;
@@ -45,17 +43,13 @@ nav{
 .carasuol{
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
     width: auto;
     z-index: 20;
-    /* border: 1px solid black; */
-    /* overflow: hidden; */
     gap: 15px;
     margin: 0 10px ;
     position: absolute;
     left: 0px;
     transition: 0.3s ease-in-out;
-    /* float:right; */
 }
 .rec-Movie{
     width: 158px;
@@ -76,9 +70,6 @@ img{
 }
 .filter-movie{
     display: flex;
-    /* width: 60%; */
-    /* margin: auto; */
-    /* justify-content: center; */
     gap: 20px;
     align-items: center;
 }
@@ -115,14 +106,12 @@ img{
     display: flex;
     align-items: center;
     position: relative;
-    /* background-color; */
 }
 .searchBar i{
     cursor: pointer;
     position: relative;
     color: white;
     z-index: 10;
-    /* left: 0; */
     padding: 10px 200px 10px 10px;
     font-size: 20px;
     background-color: black;
@@ -131,7 +120,6 @@ img{
     border-radius: 50px;
     width: 700%;
     position:absolute;
-    /* z-index: 5; */
     left: 50px;
     padding: 10px 15px;
     transition: 0.3s ease-in-out;
@@ -154,7 +142,6 @@ img{
     margin-top: 10px;
     color: white;
     margin-bottom: 30px;
-    /* padding: 0 10px; */
 }
 .showMovieItem{
     width: 255px;
@@ -172,13 +159,11 @@ img{
     background-color: white;
     color: black;
     transition: 0.2s ease-in-out;
-    /* font-size: 100px; */
 }
 .main-title{
     width: 100%;
     font-weight: bold;
     text-align: center;
-    /* padding: 10px; */
 }
 main h2{
     color: white;
@@ -195,11 +180,9 @@ main h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* display: none; */
 }
 .logoLoader{
     mix-blend-mode:hard-light;
-    /* width: 100%; */
     width: 20%;
 }
 .logo img{
@@ -227,11 +210,9 @@ main h2{
     color: #181818;
     border-radius: 20px;  
     box-shadow: 0 0 1500px 3000px rgba(0, 0, 0, 0.842);
-    /* height: 80%; */
 }
 
 .showMovieDetails .imgD{
-    /* background-color: aqua; */
     width: 25%;
     
 }
@@ -240,11 +221,10 @@ main h2{
     cursor: pointer;
 }
 .detailsRight{
-    padding: 50px 0;
-    max-width: 500px;
+    width: 80%;
+    /* padding: 50px 0; */
+    /* max-width: 500px; */
     min-height: 450px;
-    /* display: flex; */
-    /* align-items: center; */
 }
 .background{
     display: none;
@@ -256,13 +236,11 @@ main h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: c; */
 }
 .detailsRight-sub >p:nth-child(1){
     text-transform: uppercase;
     font-size: 38px;
     font-weight: bold; 
-    /* white-space: no-wrap; */
 }
 
 .detailsRight-sub >p:nth-child(2){
@@ -282,11 +260,13 @@ main h2{
 
 .detailsRight-sub >p:nth-child(5){
     margin-top: -20px;
-    /* width: 50%; */
 }
 .detailsRight-sub >div:nth-child(6){
     display: flex;
     justify-content: space-between;
+}
+.directors{
+    width: 50%;
 }
 .directors p{
     font-weight: bold;
@@ -301,10 +281,21 @@ main h2{
     top: 30px;
     font-size: 28px;
     cursor: pointer;
-    /* color: blueviolet; */
+}
+.imgD {
+   /* display: flex; */
+   align-items: center;
 }
 #year{
     font-size: 16px;
+}
+.description{
+    overflow: hidden;
+    max-height: 170px;
+    text-overflow: ellipsis;
+}
+.icons{
+    width: 50%;
 }
 .icons i{
     transition: 0.2s ease-in-out;
@@ -342,14 +333,9 @@ main h2{
     .filter-movie {
         flex-wrap: wrap;
     }
-    /* .searchBar input {
-        width: 500%;
-    } */
+    
 }
-/* .logo{
-    display: flex;
-    justify-content: center;
-} */
+
 .talign-center{
     position: fixed;
     z-index: 200;
@@ -428,13 +414,6 @@ main h2{
       animation: anim-rotate 1s infinite steps(12);
   }
   
-  /* body {
-      font-family: sans-serif;
-      color: #ccc;
-      line-height: 1.5;
-      font-size: 1em;
-      background: #181818;
-  } */
   .talign-center {
       text-align: center;
   }
@@ -453,7 +432,14 @@ main h2{
   .pagination{
     color: white;
     text-align: center;
+    
   }
   img{
     cursor: pointer;
+  }
+  .pagination button{
+    padding: 3px 5px;
+    font-weight: bold;
+    /* background-color: white; */
+    color: black;
   }
