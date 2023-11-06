@@ -321,6 +321,24 @@ main h2{
         align-self: flex-end;
         
     }
+    .imgD{
+        display: none;
+    }
+    .detailsRight{
+        width: 100%;
+    }
+    .directors{
+        width: 100%;
+    }
+    .directors p:nth-child(2){
+        width: 50%;
+    }
+    .detailsRight-sub >div:nth-child(3){
+        width: 100%;
+    }
+    .detailsRight-sub >p:nth-child(1) {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:480px) {
     .right-nav{
